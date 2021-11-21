@@ -1,6 +1,17 @@
 package com.luv2code.springdemo;
 
 public class TrackCoach implements Coach {
+	
+//need no arg contructor to run MyApp
+	public TrackCoach() {
+		
+	}
+// private field
+	private FortuneService fortuneService;
+	public TrackCoach(FortuneService fortuneService) {
+		super();
+		this.fortuneService = fortuneService;
+	}
 
 	@Override
 	public String getDailyWorkout() {
@@ -11,7 +22,7 @@ public class TrackCoach implements Coach {
 	@Override
 	public String getDailyFortune() {
 		// TODO Auto-generated method stub
-		return null;
+		return " Thanksgiving workout" + fortuneService.getFortune();
 	}
 
 }
