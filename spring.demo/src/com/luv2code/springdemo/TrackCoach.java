@@ -8,4 +8,10 @@ public class TrackCoach implements Coach {
 		return "Run a hard workout";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
