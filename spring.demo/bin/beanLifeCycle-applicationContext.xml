@@ -7,14 +7,23 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-   
-    <bean id ="myFortuneService"
+       <bean id ="myFortuneService"
          class="com.luv2code.springdemo.HappyFortuneService">
          </bean>
-   <bean id="myCoach"
-        class="com.luv2code.springdemo.TrackCoach">
-        <constructor-arg ref="myFortuneService">   </constructor-arg>
+         
+    <bean id ="myCoach"
+         class="com.luv2code.springdemo.TrackCoach" init-method="doMyStarupStuff"
+         destroy-method="doCleanUP">
+
+        <constructor-arg ref="myFortuneService" />   
     
     </bean>
 
 </beans>
+
+
+
+
+
+
+
