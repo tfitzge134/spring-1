@@ -17,8 +17,10 @@ public class BeanScopeDemoApp {
 		//check if they are the same
 		boolean result = (theCoach == alphaCoach);
 		System.out.println("\nPointing to the same object" + result);
-		System.out.println("\n memory address for coach class is  " + theCoach + " memory address for the alphaCoach  is "
+		System.out.println("\n memory address for coach class is  " + theCoach + " \nmemory address for the alphaCoach  is "
 				+ alphaCoach);
+		//close context
+		context.close();
 
 	}
 
