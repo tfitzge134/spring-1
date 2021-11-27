@@ -1,6 +1,29 @@
 package com.luv2code.springdemo;
 
 public class CricketCoach implements Coach {
+	private String emailAddress;
+	private String team;
+	
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+	
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("criketcoach esta dentro del setter method set email");
+		this.emailAddress = emailAddress;
+	}
+
+
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String team) {
+		System.out.println("criketcoach esta dentro del setter method set team");
+		this.team = team;
+	}
+
 	private FortuneService fortuneService;
 	//create no arg constructor
 	

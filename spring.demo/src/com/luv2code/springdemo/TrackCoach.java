@@ -25,4 +25,5 @@ public class TrackCoach implements Coach {
 		return " Thanksgiving workout" + fortuneService.getFortune();
 	}
 
+	
 }
