@@ -15,6 +15,17 @@ public class HelloSpringApp {
 		//call method on bean
 		System.out.println(theCoach.getDailyWorkout());
 		System.out.println(theCoach.getDailyFortune());
+		
+		RandomFortuneService random = 
+			context.getBean("myRandomFortune",RandomFortuneService.class);
+System.out.println(random.getFortune() + " --random luck printed ")	;
+		
+		
+//		</bean>
+//	    <bean id="myRandomFortune"
+//	          class="com.luv2code.springdemo.RandomFortuneService"> 
+	       			
+		
 	
 	
 		//close the context

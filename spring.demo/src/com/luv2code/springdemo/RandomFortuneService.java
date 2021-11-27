@@ -20,7 +20,7 @@ public class RandomFortuneService implements FortuneService{
 			
 			String theFortune = data[index];
 			
-			return theFortune;
+			return theFortune + "random";
 		}
 
 	}
